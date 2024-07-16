@@ -9,7 +9,45 @@ import SwiftUI
 
 struct Feed: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Color.black
+                .ignoresSafeArea()
+
+            ZStack {
+                VStack {
+                    VStack {
+                        HStack {
+                            Image(systemName: "person.2.fill")
+                                .foregroundStyle(.white)
+                            Spacer()
+
+                            Text("BeReal.")
+                                .foregroundStyle(.white)
+                                .fontWeight(.bold)
+                                .font(.system(size: 22))
+
+                            Spacer()
+
+                            Image(.profile)
+                                .resizable()
+                                .frame(width: 35, height: 35)
+                                .clipShape(Circle())
+                        } //: HStack
+                        .padding(.horizontal)
+                        HStack {
+                            Text("My Friends")
+                                .foregroundStyle(.white)
+                                .fontWeight(.semibold)
+
+                            Text("Discovery")
+                                .foregroundStyle(.gray)
+                        }
+                    } //: VStack
+                    
+                    Spacer()
+                }
+            }
+        }
     }
 }
 
