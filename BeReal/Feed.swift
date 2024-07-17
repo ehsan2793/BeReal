@@ -42,8 +42,8 @@ struct Feed: View {
                             Text("Discovery")
                                 .foregroundStyle(.gray)
                         }
-                    } //: VStack
-                    
+                    } //: Uppper User Profile
+
                     Spacer()
                 }
             }
