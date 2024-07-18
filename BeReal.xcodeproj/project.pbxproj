@@ -13,6 +13,7 @@
 		7C5A36A02C46415E00C23A14 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C5A369F2C46415E00C23A14 /* Preview Assets.xcassets */; };
 		7C5A36A72C46427600C23A14 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5A36A62C46427600C23A14 /* Feed.swift */; };
 		7CC5A6052C476E09006B6D06 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC5A6042C476E09006B6D06 /* FeedCell.swift */; };
+		7CC5A6082C48F498006B6D06 /* ThreeDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC5A6072C48F498006B6D06 /* ThreeDots.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		7C5A369F2C46415E00C23A14 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7C5A36A62C46427600C23A14 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		7CC5A6042C476E09006B6D06 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		7CC5A6072C48F498006B6D06 /* ThreeDots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDots.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 		7C5A36972C46415B00C23A14 /* BeReal */ = {
 			isa = PBXGroup;
 			children = (
+				7CC5A6062C48F472006B6D06 /* Helpers */,
 				7C5A36982C46415B00C23A14 /* BeRealApp.swift */,
 				7C5A369A2C46415B00C23A14 /* ContentView.swift */,
 				7C5A36A62C46427600C23A14 /* Feed.swift */,
@@ -71,6 +74,14 @@
 				7C5A369F2C46415E00C23A14 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7CC5A6062C48F472006B6D06 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7CC5A6072C48F498006B6D06 /* ThreeDots.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C5A369B2C46415B00C23A14 /* ContentView.swift in Sources */,
+				7CC5A6082C48F498006B6D06 /* ThreeDots.swift in Sources */,
 				7CC5A6052C476E09006B6D06 /* FeedCell.swift in Sources */,
 				7C5A36A72C46427600C23A14 /* Feed.swift in Sources */,
 				7C5A36992C46415B00C23A14 /* BeRealApp.swift in Sources */,

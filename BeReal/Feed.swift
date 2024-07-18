@@ -14,6 +14,56 @@ struct Feed: View {
                 .ignoresSafeArea()
 
             ZStack {
+                ScrollView {
+                    VStack {
+                        VStack {
+                            ZStack {
+                                VStack(alignment: .leading) {
+                                    Image(.back)
+                                        .resizable()
+                                        .scaledToFit()
+                                        .clipShape(RoundedRectangle(cornerRadius: 5))
+                                }
+                                VStack {
+                                    HStack {
+                                        Image(.front)
+                                            .resizable()
+                                            .scaledToFit()
+                                            .clipShape(RoundedRectangle(cornerRadius: 2))
+                                            .border(.black)
+                                            .frame(width: 20, height: 40)
+                                            .padding(.leading, 5)
+                                        Spacer()
+                                    }
+                                    Spacer()
+                                }
+                            }
+                            .frame(width: 100)
+                        }
+
+                        VStack {
+                            Text("Add a caption...")
+                                .foregroundStyle(.white)
+                                .fontWeight(.semibold)
+                            Text("View Comment")
+                                .foregroundStyle(.gray)
+
+                            HStack {
+                                Text("Fullerton, Ca • 1 hr late")
+                                    .foregroundStyle(.gray)
+                                    .font(.system(size: 12))
+                                ThreeDots(size: 3, color: .gray)
+                            }
+                        }
+
+                        ForEach(1..<8) { _ in
+                            FeedCell()
+                            
+                        }
+                    }
+                    .padding(.top, 80)
+                }
+
                 VStack {
                     VStack {
                         HStack {

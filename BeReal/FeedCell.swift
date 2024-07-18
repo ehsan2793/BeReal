@@ -52,7 +52,7 @@ struct FeedCell: View {
                                     .shadow(color: .black, radius: 3, x: 1, y: 1)
                             }
                             .padding(.trailing, 20)
-                            .padding(.bottom, 90)
+                            .padding(.bottom, 100)
                         }
                     }
                     .zIndex(1)
